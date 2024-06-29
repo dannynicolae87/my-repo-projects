@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 p {
     color: red;
 }
@@ -8,10 +13,42 @@ p {
     margin: 32px;
     border: solid 5px green;
     padding: 20px;
+    padding-bottom: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #container2 p:last-child:hover {
     color: #ffffff;
     background-color: red;
     border: solid 5px black;
+}
+
+@media screen and (max-width: 424px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    img {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    img {
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 186px) {
+    #container2 p:last-child {
+        width: 50px;
+        height: 50px;
+    }
 }
